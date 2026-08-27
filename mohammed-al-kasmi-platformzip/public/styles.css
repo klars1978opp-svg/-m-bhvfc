@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #f4f6fa;
+  color: #2d3748;
+  direction: rtl;
+}
+
+/* واجهة تسجيل الدخول */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 20px;
+  color: #1a202c;
+  margin-bottom: 6px;
+}
+
+.auth-card p {
+  color: #718096;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #4a5568;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* الهيدر العلوي واستعراض اسم الطالب بالمنتصف */
+.header-banner {
+  background: white;
+  padding: 20px 16px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.student-name-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b6cb0;
+  margin-bottom: 4px;
+}
+
+.role-badge {
+  display: inline-block;
+  background-color: #ebf8ff;
+  color: #3182ce;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border: 1px solid #cbd5e0;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* الشاشة الرئيسية والحاويات */
+.container {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.action-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-card:active {
+  transform: scale(0.97);
+  border-color: #3182ce;
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* الجداول والأقسام الفرعية */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.back-btn {
+  background: #edf2f7;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.content-box {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 12px;
+}
+
+/* جدول الدرجات */
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.grades-table th, .grades-table td {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.grades-table th {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+}
